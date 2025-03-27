@@ -44,6 +44,8 @@ public class RenderSystem extends EntitySystem {
                          positionComponent.position.y + sizeComponent.size.y);
                      break;
              }
+
+             shapeRenderer.end();
         }
     }
 }
