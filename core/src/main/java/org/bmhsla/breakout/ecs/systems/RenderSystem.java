@@ -33,7 +33,7 @@ public class RenderSystem extends EntitySystem {
                  case CIRCLE:
                      shapeRenderer.circle(positionComponent.position.x + sizeComponent.size.x / 2f,
                          positionComponent.position.y + sizeComponent.size.y / 2f,
-                         sizeComponent.size.x / 2f;
+                         sizeComponent.size.x / 2f);
                      break;
                  case TRIANGLE:
                      shapeRenderer.triangle(positionComponent.position.x,
