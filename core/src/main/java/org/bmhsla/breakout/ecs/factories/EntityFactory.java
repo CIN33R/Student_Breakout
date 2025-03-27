@@ -1,15 +1,16 @@
 package org.bmhsla.breakout.ecs.factories;
 
 import com.badlogic.ashley.core.Entity;
-import org.bmhsla.breakout.ecs.components.PositionComponent;
-import org.bmhsla.breakout.ecs.components.RenderComponent;
-import org.bmhsla.breakout.ecs.components.SizeComponent;
-import org.bmhsla.breakout.ecs.components.SpeedComponent;
+import org.bmhsla.breakout.ecs.components.*;
 
 public class EntityFactory {
 
     public Entity createPaddleEntity() {
         Entity paddle = new Entity();
+
+        TypeTagComponent typeTag = new TypeTagComponent();
+        typeTag.tag = "paddle";
+        paddle.add(typeTag);
 
         PositionComponent positionComponent = new PositionComponent();
         positionComponent.position.x = 10;
