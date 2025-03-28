@@ -51,7 +51,7 @@ public class EntityFactory {
         ball.add(sizeComponent);
 
         SpeedComponent speedComponent = new SpeedComponent();
-        speedComponent.speed = 200;
+        speedComponent.speed = 500;
         ball.add(speedComponent);
 
         DirectionComponent directionComponent = new DirectionComponent();
