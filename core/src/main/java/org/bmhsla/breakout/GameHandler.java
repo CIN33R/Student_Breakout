@@ -26,6 +26,7 @@ public class GameHandler extends ApplicationAdapter {
 
         EntityFactory entityFactory = new EntityFactory();
         engine.addEntity(entityFactory.createPaddleEntity());
+        engine.addEntity(entityFactory.createBallEntity());
     }
 
     @Override
